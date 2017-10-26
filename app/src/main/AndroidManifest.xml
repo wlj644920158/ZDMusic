@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zd.nanjing.com.zdmusic">
+
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+    <application
+        android:name=".MusicApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TransparentStatusBarTheme">
+
+        </activity>
+
+
+        <activity
+            android:name=".me.AboutActivity"
+            android:label="@string/activity_about_title">
+
+        </activity>
+        <activity
+            android:name=".create_music_directory.CreateDirectoryActivity"
+            android:label="@string/activity_create_directory_title">
+
+        </activity>
+        <activity
+            android:name=".setting.SettingActivity"
+            android:label="@string/activity_setting_title">
+
+        </activity>
+        <activity
+            android:name=".music_directory_detail.DirectoryDetailActivity"
+            android:label="@string/activity_directory_detail_title"
+            android:theme="@style/TransparentStatusBarTheme">
+
+        </activity>
+
+        <activity
+            android:name=".play.MusicPlayActivity"
+            android:theme="@style/TraluteStatusBar"></activity>
+
+        <service
+            android:name=".MusicService"
+            android:process=":remote"></service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_directory_pic"
+        android:layout_width="40dp"
+        android:transitionName="directoryPic"
+        android:layout_height="40dp"
+        android:src="@drawable/img_music_directory_avart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#333"
+            android:id="@+id/tv_directory_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="歌单名称"
+            android:textSize="20sp" />
+
+        <TextView
+            android:textColor="#999"
+            android:id="@+id/tv_directory_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="100首" />
+    </LinearLayout>
+
+</LinearLayout>

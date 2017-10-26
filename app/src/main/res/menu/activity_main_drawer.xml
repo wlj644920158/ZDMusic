@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/san_music"
+        android:icon="@drawable/ic_main_scan_music"
+        android:title="扫描音乐" />
+    <item
+        android:id="@+id/create_music_directory"
+        android:icon="@drawable/ic_main_create_directory"
+        android:title="创建歌单" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_main_setting"
+        android:title="设置" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_main_about"
+        android:title="关于" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/ic_main_exit"
+        android:title="退出" />
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">紫丁音乐</string>
+    <string name="activity_about_title">关于</string>
+    <string name="activity_create_directory_title">创建歌单</string>
+    <string name="activity_setting_title">设置</string>
+    <string name="activity_directory_detail_title">歌单详情</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
